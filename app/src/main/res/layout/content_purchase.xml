@@ -37,7 +37,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/cancel_search"
+            android:text="@string/cancel_purchase"
             android:id="@+id/cancel"
             android:clickable="true"
             android:onClick="goToScreenOne"

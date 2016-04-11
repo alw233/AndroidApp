@@ -83,9 +83,16 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     public void completePurchase(View view) {
-        startActivity(new Intent(this, PurchaseActivity.class).putExtra("toyList", shoppingCart));
+        startActivityForResult(new Intent(this, PurchaseActivity.class).putExtra("toyList", shoppingCart), 1);
     }
 
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+
+        if (requestCode == 1)
+        {
+            finish();
+        }
+    }
 
     protected class MyDragEventListener implements View.OnDragListener {
 

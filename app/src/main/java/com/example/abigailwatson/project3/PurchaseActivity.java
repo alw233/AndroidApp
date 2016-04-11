@@ -89,4 +89,10 @@ public class PurchaseActivity extends AppCompatActivity {
         startActivity(launchBrowser);
 
     }
+
+    public void goToScreenOne(View view) {
+        setResult(1);
+        finish();
+    }
+
 }
