@@ -25,6 +25,7 @@
         android:gravity="center"
         android:layout_gravity="center_horizontal|top"
         android:longClickable="true"/>
+
     <FrameLayout
         android:id="@+id/targetlayout"
         android:layout_width="357dp"

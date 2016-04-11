@@ -53,11 +53,12 @@ public class PurchaseActivity extends AppCompatActivity {
                                            int position, long arg3) {
 
                 // Can't manage to remove an item here
+                purchases.getToyList().remove(position);
                 toyNames.remove(position);//where arg2 is position of item you click
                 updatePrice();
                 arrayAdapter.notifyDataSetChanged();
 
-                return false;
+                return true;
             }
         });
 
@@ -79,7 +80,7 @@ public class PurchaseActivity extends AppCompatActivity {
     }
 
     public  void weblink(View view){
-        goToUrl("http://googlemaps.com/");
+        goToUrl("https://goo.gl/maps/DXdnjiBnzzR2");
     }
 
     private void goToUrl (String url) {
